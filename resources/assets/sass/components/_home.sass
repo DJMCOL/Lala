@@ -1,0 +1,264 @@
+.containerBanner
+  align-items: center
+  .colflex
+    padding-left: 10%
+    h1
+      font-size: 50px
+    p
+      width: 45%
+      font-size: 20px
+      margin: 2% 0
+    a
+      @include buttonGreen
+  img
+    position: absolute
+    object-fit: cover
+    height: 100vh
+    width: 100%
+    z-index: -1
+@media (min-width: 1600px)
+  .shapes p
+    font-size: 25px!important
+  .containerBanner .colflex
+    h1
+      font-size: 60px
+    p
+      font-size: 25px
+
+/*--CONOCEME--*/
+.containerAbout
+  padding: 3% 0
+.containerAbout > .colflex
+  justify-content: space-between
+  height: 100%
+  .shapes
+    justify-content: space-between
+    p
+      color: $mainColor
+      font-weight: 600
+      font-size: 20px
+    img
+      width: 8px
+    .line
+      width: 85%
+.contAbout
+  height: 95%
+  align-items: center
+  padding: 0 5% 0 1% 
+  justify-content: space-between
+  .igtrin
+    width: 40%
+  .colflex
+    width: 40%
+    h1
+      font-size: 50px
+    h2
+      font-size: 30px
+    span
+      color: $mainColor
+      font-weight: 600
+      font-size: 18px
+    p
+      font-size: 16px
+      margin: 4% 0
+      text-align: justify
+      span
+        color: #000
+    a
+      @include buttonLightGreen
+  @media (min-width: 1280px)
+    .igtrin
+      width: 35%
+  @media (min-width: 1600px)
+    .colflex
+      p, span
+        font-size: 16px
+  @media (min-width: 1900px)
+    .igtrin 
+      width: 40%
+    .colflex
+      h1
+        font-size: 55px
+      h2
+        font-size: 32px
+  .colflex_2
+    margin-left: 25%
+    text-align: center
+    width: 50%
+    @media (max-width: 800px)
+      margin-left: 0%
+      width: 100%
+    p
+      text-align: center
+    .alignJusti
+      text-align: left
+    .flex
+      text-align: center
+      display: block
+      margin-top: 5%
+      a
+        background: #70B125
+        color: #fff
+        &:hover
+          color: #70b125
+          background: #fff
+
+/*--CURSOS--*/
+.containerShopping
+  .greyBar
+    position: absolute
+    z-index: -1
+    top: 50%
+    left: 0
+    transform: translate(0,-50%)
+    width: 100%
+    background: #F3F3F3
+    height: 30%
+.containerShopping > .colflex
+  justify-content: space-between
+  height: 100%
+  .shapes
+    justify-content: space-between
+    flex-direction: row-reverse
+    p
+      color: $mainColor
+      font-weight: 600
+      font-size: 20px
+    img
+      width: 8px
+    .line
+      width: 85%
+
+.contShopping
+  height: 90%
+  grid-template-columns: repeat(2, 1fr)
+  place-items: center
+.itemShopping
+  @include itemShopping
+
+/*--TALLERES--*/
+.containerWorkshop
+  padding: 3% 0
+.containerWorkshop > .colflex
+  justify-content: space-between
+  height: 100%
+  position: relative
+  padding-left: 5%
+  width: 100%
+  .shapes
+    justify-content: space-between
+    width: 95%
+    p
+      color: $mainColor
+      font-weight: 600
+      font-size: 20px
+    img
+      width: 8px
+    .line
+      width: 90%
+
+.contWorkshop
+  align-items: center
+  height: 95%
+  position: relative
+  .colflex
+    width: 40%
+    padding-left: 5%
+    align-items: flex-start
+    h2
+      font-size: 50px
+      font-weight: 400
+    p
+      font-size: 18px
+      margin: 2% 0 5% 
+    a
+      @include buttonLightGreen
+  img
+    width: 50%
+    position: absolute
+    right: 0
+
+  /*--BLOG--*/
+.containerBlog
+  padding: 3% 0 0
+  background: #F3F3F3
+.containerBlog > .colflex
+  justify-content: space-between
+  height: 100%
+  .shapes
+    justify-content: space-between
+    p
+      color: $mainColor
+      font-weight: 600
+      font-size: 20px
+    img
+      width: 8px
+    .line
+      width: 90%
+
+.contBlog
+  align-items: center
+  height: 95%
+  .colflex
+    align-items: center
+    width: 100%
+    .btnBlog
+      @include buttonLightGreen
+  .grid
+    width: 100%
+    margin: auto
+    place-items: center
+    grid-template-columns: repeat(3,1fr)
+    gap: 60px
+    margin-bottom: 4%
+  @media (min-width: 1366px )
+    margin-bottom: 2%
+  @media (min-width: 1900px )
+    .grid
+      gap: 100px
+  
+.itemBlog
+  @include itemBlog
+
+.subscribe
+  width: 70%
+  justify-content: space-between
+  align-items: center
+  margin: 2% auto
+  .colflex
+    width: 35%  
+  h3
+    font-size: 25px
+    margin-bottom: 5px
+    font-weight: 400
+  form
+    align-items: center
+    width: 60%
+    input
+      width: 100%
+      border: 2px solid $mainColor
+      border-radius: 2rem
+      height: 3.3rem
+      padding: 0 15px
+    a
+      position: absolute
+      right: 15px
+      cursor: pointer
+      transition: ease .3s
+      &:hover
+        right: 10px
+        transform: scale(1.1)
+  @media (min-width: 1600px)
+    width: 60%
+    .colflex
+      p
+        font-size: 18px
+      h3
+        font-size: 30px
+  @media (min-width: 1900px)
+    width: 50%
+    .colflex
+      p
+        font-size: 20px
+      h3
+        font-size: 32px

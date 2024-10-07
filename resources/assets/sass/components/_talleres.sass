@@ -1,0 +1,31 @@
+.bannerTalleres
+  @include bannerCursos
+  .colflex
+    @media (min-width: 1900px)
+      width: 420px
+  h1
+    color: #fff
+  p
+    color: #fff
+  @media (max-width: 450px)
+    h1
+      color: $mainColor
+    p
+      color: $textBlack
+
+.containerTalleres
+  grid-template-columns: 1fr
+  place-items: center
+  row-gap: 30px
+  margin: 5% auto
+  @media (min-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+  @media (min-width: 1280px)
+    grid-template-columns: repeat(3, 1fr)
+  @media (min-width: 1600px)
+    grid-template-columns: repeat(4, 1fr)
+.itemTaller
+  @include itemCourse
+
+.modalTaller
+  @include modalTaller

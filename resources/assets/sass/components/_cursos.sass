@@ -1,0 +1,54 @@
+.bannerCursos
+  @include bannerCursos
+  h1
+    color: $mainColor
+  p
+    color: $textBlack
+
+.containerCourses
+  grid-template-columns: 1fr
+  place-items: center
+  row-gap: 30px
+  margin: 5% auto
+  @media (min-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+  @media (min-width: 1280px)
+    grid-template-columns: repeat(3, 1fr)
+  @media (min-width: 1600px)
+    grid-template-columns: repeat(4, 1fr)
+.itemCourse
+  @include itemCourse
+
+.modalCourse
+  @include modalCourse
+
+.resumeCurso
+    p
+        margin-bottom: 4%
+    a
+        font-size: 14px!important
+        text-align: center
+        width: 70% !important
+        margin: 5px 0px
+        padding: 8px 0
+        border: 1px solid $mainColor
+        border-radius: 15px
+        text-transform: uppercase
+        font-weight: 600
+        transition: .3s
+        @media (max-width: 600px)
+            width: 100% !important
+        &:hover
+            cursor: pointer
+        &:first-of-type
+            background: $mainColor
+            color: #fff
+            &:hover
+                background: #fff
+                color: $mainColor
+        &:last-of-type
+            background: #fff
+            color: $mainColor
+            &:hover
+                background: $mainColor
+                color: #fff

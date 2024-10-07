@@ -1,0 +1,149 @@
+@media (min-width: 1024px)
+  h1
+    font-size: 40px
+  p
+    font-size: 18px
+  a
+    font-size: 14px
+.containerBannerMob
+  picture img
+    display: block
+  .colflex
+    padding: 3% 5%
+    align-items: center
+    background: -moz-linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 80%)
+    background: -webkit-linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 80%)
+    background: linear-gradient(180deg, rgba(243,243,243,1) 0%, rgba(255,255,255,1) 80%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f3f3",endColorstr="#ffffff",GradientType=1)
+    h1
+      font-weight: 400
+    p
+      text-align: center
+      margin: 20px 0
+      width: 70%
+    a
+      @include buttonGreen
+  @media (min-width: 768px)
+    flex-direction: row
+    position: relative
+    align-items: center
+    .colflex
+      position: absolute
+      left: 50px
+      background: none
+      width: 250px
+      padding: 0
+      align-items: flex-start
+      p
+        text-align: justify
+      @media (min-width: 768px)
+        left: 80px
+        width: 280px
+        h1
+          font-size: 35px
+        a
+          font-size: 14px
+      @media (min-width: 1024px)
+        width: 300px
+.conoceMob
+  margin: 5% 0
+.containerConoceMob
+  img
+    margin-bottom: 10px
+  .colflex
+    align-items: center
+    a
+      @include buttonGreen
+    h1, h2
+      font-weight: 400
+    h1
+      font-size: 32px
+    p
+      margin: 10px 0
+      text-align: justify
+    span
+      margin: 5px 0 15px
+  @media (min-width: 768px)
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    img, .colflex
+      width: 45%
+
+.shoppingMob
+  margin: 10% 0
+  h1
+    margin-bottom: 10px
+    text-align: center
+    font-weight: 400
+    font-size: 32px
+  @media (min-width: 768px)
+    margin: 5% 0
+    h1
+      margin-bottom: 20px
+
+.containerShoppingMob
+  grid-template-columns: 1fr
+  place-items: center
+  row-gap: 25px
+  .itemShopping
+    width: 100%
+    img
+      height: 235px
+      object-fit: cover
+    a
+      font-size: 14px
+  @media (min-width: 768px)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+
+.containerSubscribeMob
+  align-items: center
+  margin: 10% auto
+  .colflex
+    text-align: center
+  h3
+    font-size: 20px
+  p
+    margin: 10px 0
+  form
+    justify-content: center
+    align-items: center
+    @media (min-width: 768px)
+      width: 60%
+    input
+      width: 100%
+      border: 2px solid $mainColor
+      border-radius: 2rem
+      height: 3.3rem
+      padding: 0 15px
+    a
+      position: absolute
+      right: 15px
+      cursor: pointer
+      transition: ease .3s
+
+.blogMob
+  @media (max-width: 767px)
+    display: none
+  @media (min-width: 768px)
+    background: #F8F8F8
+    .grid
+      grid-template-columns: repeat(2, 1fr)
+      gap: 35px
+      place-items: center
+    .containerBlogMob
+      padding: 5% 0
+      justify-content: center
+      .btnBlog
+        //justify-self: center
+        //margin: 20px auto 0
+        @include buttonGreen
+        font-size: 14px
+      h1
+        text-align: center
+        margin-bottom: 25px
+        font-size: 32px
+        font-weight: 400
+    
+      

@@ -1,0 +1,597 @@
+@mixin buttonGreen
+  background: $mainColor
+  color: #fff
+  font-weight: 400
+  border-radius: 20px
+  padding: 10px 20px
+  text-transform: uppercase
+  transition: .3s
+  cursor: pointer
+  border: 1px solid $mainColor
+  &:hover
+    background: #fff
+    color: $mainColor
+    border: 1px solid $mainColor
+  @media (min-width: 768px)
+    font-size: 16px
+  @media (min-width: 1600px)
+    font-size: 18px
+
+@mixin buttonLightGreen
+  border: 1px solid $mainColor
+  color: $mainColor
+  transition: .3s
+  border-radius: 20px
+  padding: 10px 20px
+  font-weight: 600
+  text-transform: uppercase
+  &:hover
+    background: $mainColor
+    color: #fff
+  @media (min-width: 1600px)
+    font-size: 18px
+
+@mixin banner100
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    object-fit: cover
+  h1
+    position: absolute
+    color: #fff
+    font-size: 50px
+  @media (max-width: 768px)
+    margin-top: 50px
+    h1
+      font-size: 35px
+
+
+@mixin bannerCursos
+  align-items: center
+  img
+    width: 100%
+    object-fit: cover
+  @media (max-width: 450px)
+    flex-direction: column
+    align-items: center
+    .colflex
+      position: static
+      margin: 10px 0
+      h1
+        font-size: 30px
+        text-align: center
+        margin-bottom: 10px
+      p
+        text-align: left
+        width: 80%
+        margin: auto
+        font-size: 16px
+  @media (min-width: 768px)
+    .colflex
+      position: absolute
+      z-index: 1
+      left: 10%
+      width: 400px
+      h1
+        font-size: 50px
+        font-weight: 400
+        margin-bottom: 20px
+      p
+        font-size: 18px
+        text-align: left
+  @media (min-width: 1900px)
+    .colflex
+      left: 12%
+      width: 400px
+      h1
+        font-size: 55px
+      p
+        font-size: 22px
+
+@mixin itemCourse
+  width: 300px
+  -webkit-box-shadow: 0 3px 3px 2px rgba(235,235,235,1)
+  -moz-box-shadow: 0 3px 3px 2px rgba(235,235,235,1)
+  box-shadow: 0 3px 3px 2px rgba(235,235,235,1)
+  @media (min-width: 768px)
+    width: 320px
+  @media (min-width: 1024px)
+    width: 350px
+  @media (min-width: 1600px)
+    width: 380px
+  img
+    width: 100%
+    height: 300px
+    object-fit: cover
+  .iconGift
+    position: absolute
+    left: -7px
+    top: 30px
+    width: 120px
+    height: auto
+  .colflex
+    width: 100%
+    padding: 5%
+    h2
+      font-size: 18px
+      color: $titleBlack
+      margin-bottom: 5px
+      font-weight: 600
+    p
+      font-size: 14px
+      height: 5em
+      max-height: 5em
+      overflow: auto
+      &::-webkit-scrollbar
+        width: 6px
+      &::-webkit-scrollbar-thumb
+        background-color: $mainColor
+        border-radius: 3px
+        border: 3px solid $mainColor
+    @media (min-width: 1440px)
+      h2
+        font-size: 22px
+      p
+        font-size: 16px
+        margin-bottom: 5px
+    @media (min-width: 1600px)
+      h2
+        font-size: 24px
+
+  .price
+    margin: 10px 0
+    justify-content: space-between
+    span
+      font-weight: 600
+      &:first-child
+        color: $mainColor
+        font-size: 20px
+        margin-right: 20px
+      &:last-child
+        font-size: 18px
+        color: #4A7A12
+      @media (min-width: 1440px)
+        &:first-child
+          font-size: 22px
+      &:last-child
+          font-size: 20px
+
+  .ctaMore
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    a
+      &:hover
+          cursor: pointer
+      &:first-child
+        color: $mainColor
+        @media (min-width: 1280px)
+          transition: .3s
+          &:hover
+            text-decoration: underline
+      &:last-child
+        padding: 5px 10px
+        border: 1px solid $mainColor
+        border-radius: 15px
+        color: $mainColor
+        text-transform: uppercase
+        transition: .3s
+        @media (min-width: 1280px)
+          &:hover
+            color: #fff
+            background: $mainColor
+      @media (min-width: 1440px)
+        font-size: 16px
+
+
+@mixin modalCourse
+  max-width: 1000px
+  h1
+    font-size: 25px
+    text-align: center
+  hr
+    width: 100%
+    height: 1.2px
+    background: #ECECEC
+    margin: 10px 0
+  p
+    font-size: 14px
+  li
+    font-size: 14px
+    margin-bottom: 5px
+  .descriptionCourse
+    h2
+      font-size: 20px
+      text-align: center
+      margin-bottom: 10px
+    p
+      text-align: justify
+    h3
+      color: $titleBlack
+      margin: 10px 0
+      font-size: 16px
+    ul
+      list-style-position: inside
+      margin-bottom: 20px
+  .btn_course_modal
+      font-size: 14px!important
+      text-align: center
+      width: 30% !important
+      margin: 5px 0px
+      padding: 8px 0
+      border: 1px solid $mainColor
+      background: $mainColor
+      color: #ffffff
+      border-radius: 15px
+      text-transform: uppercase
+      font-weight: 600
+      transition: .3s
+      @media (max-width: 600px)
+          width: 100% !important
+      &:hover
+          cursor: pointer
+          border: 1px solid $mainColor
+          background: #ffffff
+          color: $mainColor
+  .buyCourse
+    img
+      margin-bottom: 15px
+      width: 100%
+    a
+      font-size: 14px!important
+      text-align: center
+      width: 85% !important
+      margin: 5px auto
+      padding: 8px 0
+      border: 1px solid $mainColor
+      border-radius: 15px
+      text-transform: uppercase
+      font-weight: 600
+      transition: .3s
+      &:hover
+          cursor: pointer
+      &:first-of-type
+        background: $mainColor
+        color: #fff
+        &:hover
+          background: #fff
+          color: $mainColor
+      &:last-of-type
+        background: #fff
+        color: $mainColor
+        &:hover
+          background: $mainColor
+          color: #fff
+    span
+      margin: 10px 0
+      color: $textBlack
+    .flex
+      margin-bottom: 10px
+      align-items: center
+      img
+        margin: 0 8px 0 0
+        width: 25px
+  @media (min-width: 1280px)
+    max-width: 1000px!important
+    h1
+      font-size: 30px
+      padding: 10px 0
+    p
+      font-size: 16px
+    .contDescriptionCourse
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+      padding: 20px 0
+    .descriptionCourse
+      width: 55%
+      h2
+        font-size: 25px
+      li
+        margin-bottom: 10px
+        font-size: 18px
+      h3
+        margin: 20px 0
+    .buyCourse
+      width: 40%
+
+@mixin itemBlog
+  overflow: hidden
+  border-radius: 10px
+  transition: all .3s
+  width: 300px!important
+  @media (min-width: 1600px)
+    width: 350px!important
+  &:hover
+    box-shadow: 0 8px 10px 5px #EBEBEB
+    margin-top: -5px
+  .portadaItem
+    width: 100%
+    height: 200px
+    object-fit: cover
+    @media (min-width: 1600px)
+      height: 250px
+    @media (min-width: 1600px)
+      height: 300px
+  .colflex
+    width: 100%
+    background: #fff
+    padding: 25px 25px 15px 25px
+    align-items: flex-start
+    h3
+      text-align: left
+    p
+      font-size: 15px
+      margin-bottom: 20px
+      text-align: justify
+      @media (min-width: 768px)
+        height: 5rem
+    h3
+      font-weight: 600
+      font-size: 20px
+      margin-bottom: 10px
+    .txtBlog
+      justify-content: space-between
+      width: 100%
+      align-items: center
+      p
+        font-size: 12px
+        width: 50%
+        margin-bottom: 0
+        height: 1rem
+      .publish
+        justify-content: flex-end
+        align-items: center
+        width: 50%
+        span
+          font-size: 12px
+          color: $mainColor
+  @media (max-width: 768px)
+    width: 100%
+    .colflex
+      h3
+        font-size: 20px
+      .txtBlog
+        p
+          font-size: 12px
+        .publish
+          span
+            font-size: 10px
+  @media (max-width: 450px)
+    width: 90%
+    .colflex
+      h3
+        font-size: 18px
+      .txtBlog
+        p
+          font-size: 12px
+        .publish
+          span
+            font-size: 10px
+
+  @media (min-width: 1600px)
+    width: 80%
+    .colflex
+      h3
+        font-size: 23px
+      .txtBlog
+        p
+          font-size: 14px
+        .publish
+          span
+            font-size: 14px
+
+@mixin itemShopping
+  width: 350px
+  @media (min-width: 1280px)
+    width: 400px
+  img
+    height: 200px
+    object-fit: cover
+    margin-bottom: 8px
+    @media (min-width: 1600px)
+      height: 250px
+  .flex
+    justify-content: space-between
+    align-items: center
+    h3
+      width: 30%
+      font-weight: 600
+      color: $titleBlack
+    a
+      @include buttonGreen
+  @media (min-width: 1600px)
+    width: 400px
+    .flex h3
+      font-size: 23px
+  @media (min-width: 1900px)
+    width: 450px
+
+@mixin modalAsesoria
+  max-width: 1000px
+  h1
+    font-size: 25px
+    text-align: center
+  hr
+    width: 100%
+    height: 1.2px
+    background: #ECECEC
+    margin: 10px 0
+  p
+    font-size: 14px
+  .descriptionAsesoria
+    img
+      margin-bottom: 15px
+      width: 100%
+      object-fit: contain
+      height: 350px
+    h2
+      font-size: 20px
+      text-align: center
+      margin-bottom: 10px
+    p
+      text-align: justify
+    h3
+      font-size: 16px
+      color: $titleBlack
+      margin: 10px 0
+    ul
+      list-style-position: inside
+      margin-bottom: 20px
+    li
+      margin-bottom: 5px
+      font-size: 14px
+  .buyAsesoria
+    a
+      font-size: 14px!important
+      text-align: center
+      width: 85% !important
+      margin: 5px auto
+      padding: 8px 0
+      border: 1px solid $mainColor
+      border-radius: 15px
+      text-transform: uppercase
+      font-weight: 600
+      transition: .3s
+      &:hover
+          cursor: pointer
+      &:first-of-type
+        background: $mainColor
+        color: #fff
+        &:hover
+          background: #fff
+          color: $mainColor
+      &:last-of-type
+        background: #fff
+        color: $mainColor
+        &:hover
+          background: $mainColor
+          color: #fff
+    span
+      margin: 10px 0
+      color: $textBlack
+
+  @media (min-width: 1280px)
+    max-width: 1000px!important
+    h1
+      font-size: 30px
+      padding: 10px 0
+    p
+      font-size: 16px
+    .contAsesorias
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+      padding: 20px 0
+    .descriptionAsesoria
+      width: 45%
+      h2
+        font-size: 25px
+      li
+        margin-bottom: 10px
+        font-size: 16px
+      h3
+        margin: 20px 0
+    .buyAsesoria
+      width: 50%
+
+@mixin modalTaller
+  max-width: 1000px
+  h1
+    font-size: 25px
+    text-align: center
+  hr
+    width: 100%
+    height: 1.2px
+    background: #ECECEC
+    margin: 10px 0
+  p
+    font-size: 14px
+  li
+    font-size: 14px
+    margin-bottom: 5px
+  .descriptionTaller
+    h2
+      font-size: 20px
+      text-align: center
+      margin-bottom: 10px
+    p
+      text-align: justify
+    h3
+      font-size: 18px
+      color: $titleBlack
+      margin: 10px 0
+    ul
+      list-style-position: inside
+      margin-bottom: 20px
+    .btn_course_modal
+          font-size: 14px!important
+          text-align: center
+          width: 30% !important
+          margin: 5px 0px
+          padding: 8px 0
+          border: 1px solid $mainColor
+          background: $mainColor
+          color: #ffffff
+          border-radius: 15px
+          text-transform: uppercase
+          font-weight: 600
+          transition: .3s
+          @media (max-width: 600px)
+              width: 100% !important
+          &:hover
+              cursor: pointer
+              border: 1px solid $mainColor
+              background: #ffffff
+              color: $mainColor
+  .buyTaller
+    img
+      margin-bottom: 15px
+      width: 100%
+    a
+      font-size: 14px!important
+      text-align: center
+      width: 85% !important
+      margin: 5px auto
+      padding: 8px 0
+      border: 1px solid $mainColor
+      border-radius: 15px
+      text-transform: uppercase
+      font-weight: 600
+      transition: .3s
+      &:first-of-type
+        background: $mainColor
+        color: #fff
+        &:hover
+          background: #fff
+          color: $mainColor
+      &:last-of-type
+        background: #fff
+        color: $mainColor
+        &:hover
+          background: $mainColor
+          color: #fff
+  @media (min-width: 1280px)
+    max-width: 1000px!important
+    h1
+      font-size: 30px
+      padding: 10px 0
+    p
+      font-size: 16px
+    .contDescriptionTaller
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+      padding: 20px 0
+    .descriptionTaller
+      width: 55%
+      h2
+        font-size: 25px
+      li
+        margin-bottom: 10px
+        font-size: 18px
+      h3
+        margin: 20px 0
+    .buyTaller
+      width: 40%

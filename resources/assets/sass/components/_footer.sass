@@ -1,0 +1,89 @@
+.contFooter
+  .links
+    padding: 3% 0
+    background: #F2F4E9
+    width: 100%
+    nav
+      width: 50%
+      margin: auto
+      justify-content: space-evenly
+      a
+        color: $textBlack
+        transition: .3s
+        font-size: 18px
+        &:hover
+          color: $mainColor
+        &:first-child
+          color: $mainColor
+        @media (min-width: 1600px)
+          font-size: 20px
+  .social
+    width: 20%
+    margin: 3% auto 0
+    justify-content: space-evenly
+
+.gutand
+  padding: 1% 5%
+  align-items: center
+  justify-content: space-between
+  .gtnd2, .tarjetas
+    align-items: center
+  .gtnd2
+    justify-content: flex-start
+    p
+      margin-right: 10px
+      color: $textBlack
+      font-weight: 500
+      font-size: 14px
+    span
+      color: $mainColor
+    img
+      width: 70px
+  .tarjetas img
+    width: 35px
+    margin: 0 5px 
+
+@media (min-width: 768px)
+  .contFooter .links
+    nav
+      width: 98%
+    .social a
+      margin-right: 20px
+
+@media (min-width:  1600px)
+  .ciudad
+    p
+      font-size: 20px
+    ul li
+      font-size: 18px
+
+@media (max-width: 375px)
+  .contFooter .links
+    &>.flex
+      width: 85%
+@media (max-width: 450px)
+  .contFooter .links
+    display: flex
+    flex-direction: column-reverse
+    &>.flex
+      width: 90%
+      flex-wrap: wrap
+      justify-content: space-around
+      a
+        margin-bottom: 20px
+
+  .gutand2
+    display: flex
+    align-items: center
+    padding: 1% 0
+    justify-content: center
+    font-size: 13px
+    span
+      color: $mainColor
+    a
+      align-items: center
+      width: 70px
+    img
+      margin: 0 5px
+  .gutand
+    display: none

@@ -1,0 +1,148 @@
+.calendarioAsesoria
+ padding-bottom: 2%
+ margin-bottom: 2%
+ border-bottom: 1px solid #ECECEC
+ #calendar
+    font-size: 12px
+    width: 100%
+    caption
+        border-radius: 10px 10px 0px 0px
+        background: #ffffff
+        text-align: center
+        padding: 0% 10px
+        color: $mainColor
+        font-size: 25px
+        font-weight: 700
+        position: relative
+        text-transform: uppercase
+        @media screen and (max-width: 600px)
+            padding: 7% 10px
+        .material-icons
+            left: 20%
+            margin-top: -8px
+            position: absolute
+            &:hover
+                cursor: pointer
+                color: $mainColor
+        .arrow_right
+            left: 80%
+            width: 10pt
+            @media screen and (max-width: 600px)
+                left: 90%
+    th
+        background-color: #ffffff
+        color: #707070
+        text-align: center
+        border-radius: 0px
+        font-size: 16px
+        text-transform: uppercase
+        border-right: 1px solid #ffffff
+    tr
+        border-bottom: none !important
+    td
+        padding: 3% 1%
+        text-align: center
+        background-color: #ffffff
+        font-size: 12pt
+        font-weight: 400
+        @media screen and (max-width: 600px)
+            padding: 6% 1%
+        span
+            padding: 15% 18%
+            background: #ffffff
+            border-radius: 100%
+            color: #707070
+            &:hover
+                cursor: pointer
+    .vacia
+        background: $mainColor
+        display: none
+    .hoy
+        background-color: $mainColor
+        color: #ffffff
+        span
+            color: #ffffff
+    .no
+        span
+            background: #ECECEC
+    .disabledDay
+        span
+            background: #ECECEC
+    .cupo
+        span
+            background: #ffffff
+            border: 1px solid #70B125
+    .nocupo
+        span
+            color: #ffffff
+            background: #70B125
+    .selected
+        span
+            color: #ffffff
+            border: 1px solid #8D0DAD
+            background: #8D0DAD
+
+.modalAsesoria
+  .select2-container
+    margin: 0px !important
+    margin-bottom: 5px !important
+  .select2-selection,.select2-selection__rendered
+      margin: 0px !important
+      height: 40px !important
+      line-height: 40px !important
+      border-radius: 100px !important
+  .select2-selection
+      padding-left: 15px !important
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+        right: 10px
+  .selecter
+      width: 100%
+      padding: 0% 7%
+  h5
+      font-size: 18px
+      color: #292929
+      font-weight: 700
+      padding-left: 15px
+  select
+      width: 100%
+      background: #ECECEC
+      color: #292929
+      border: 1px solid $mainColor
+      height: 40px
+      line-height: 40px
+      border-radius: 45px
+      margin-bottom: 10px
+      text-indent: 10px
+  .columns
+    width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    margin-bottom: 2%
+    .colum
+        float: initial
+        flex-basis: 0
+        -webkit-box-flex: 1
+        -ms-flex-positive: 1
+        flex-grow: 1
+        margin-left: initial
+        -webkit-box-flex: 0
+        -ms-flex: 0 0 33.3333333333%
+        flex: 0 0 33.3333333333%
+        h6
+            margin: 0%
+            padding: 5px 0px
+            font-size: 14px
+            color: #292929
+            font-weight: 400
+            span
+                padding: 0% 1%
+                background: $mainColor
+                border-radius: 100%
+            .no
+                background: #ECECEC
+            .yes
+                background: #ffffff
+                border: 1px solid $mainColor

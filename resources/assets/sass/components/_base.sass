@@ -1,0 +1,112 @@
+*
+  margin: 0
+  padding: 0
+  border: none
+  text-decoration: none
+  outline: none
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+  font-family: 'Bitter', serif
+  caret-color: $mainColor
+
+body
+  max-width: 2000px
+  margin: auto
+  font-weight: 400
+
+img
+  max-width: 100%
+  height: auto
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -o-user-select: none
+  user-select: none
+  -webkit-user-drag: none
+  -khtml-user-drag: none
+  -moz-user-drag: none
+  -o-user-drag: none
+
+h1, h2, h3
+  color: $mainColor
+a
+  text-decoration: none
+  display: inline
+
+p
+  color: $textBlack
+
+input, select, textarea
+  font-size: 16px
+
+.relative
+  position: relative
+
+.vh100
+  height: 100vh
+
+.flex
+  display: flex
+
+.dnone
+  display: none
+
+.colflex
+  display: flex
+  flex-direction: column
+
+.grid
+  display: grid
+
+.mg50
+  width: 50%
+  margin: auto
+
+.mg60
+  width: 60%
+  margin: auto  
+
+.mg80
+  width: 80%
+  margin: auto
+
+.mg90
+  width: 90%
+  margin: auto
+
+.workshop
+  display: none
+
+//modal position
+.blocker
+  z-index: 5!important
+
+//paginacion de blogs
+
+.pagination
+  padding: 5% 0
+  display: flex
+  justify-content: center
+  align-items: center
+  li
+    list-style-type: none
+    font-size: 18px
+    color: $textBlack
+    &:not(:last-child)
+      margin-right: 20px
+  @media (min-width: 1024px)
+    padding: 2% 0
+    li
+      font-size: 22px
+
+
+@media (min-width: 1280px)
+  .mainDesktop
+    display: block
+  .mainMobile
+    display: none
+
+.grecaptcha-badge
+  visibility: hidden

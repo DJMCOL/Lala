@@ -1,0 +1,90 @@
+.contRegistro2
+  h2
+    text-align: center
+    margin-top: 20px
+    text-transform: none
+.registro2
+  padding: 5%
+  input
+    width: 100%
+    height: 2.5rem
+    padding-left: .5rem
+    margin-bottom: 25px
+    border-radius: 8px
+    border: 1px solid $mainColor
+    &::placeholder
+      color: $mainColor
+
+  h3
+    margin-bottom: 25px
+    color: $mainColor
+  select
+    width: 100%
+    height: 2.5rem
+    color: #acacac
+    margin-bottom: 25px
+    border-radius: 8px
+    padding-left: .4rem
+    border: 1px solid $mainColor
+  textarea
+    margin-bottom: 20px
+    border: 1px solid $mainColor
+    border-radius: 8px
+    padding: .5rem
+    resize: none
+    overflow: auto
+    &::placeholder
+      color: #acacac
+      font-weight: 500
+  .addMore
+    align-items: center
+    width: 100%
+    justify-content: center
+    p
+      margin-right: 20px
+      color: #545454
+    .btnAddMore
+      cursor: pointer
+      border-radius: 50%
+      background: $mainColor
+      color: #fff
+      height: 20px
+      width: 20px
+      font-weight: 500
+      text-align: center
+      line-height: 1.2rem
+  .guardar
+    padding: 10px 20px
+    background: $mainColor
+    color: #fff
+    text-align: center
+    margin: 20px auto
+    border-radius: 8px
+    transition: background .3s
+    width: 100% !important
+    &:hover
+      cursor: pointer
+      background: $mainColor
+  .error
+      border: 1px solid red
+
+@media (min-width: 1280px)
+  .contRegistro2
+    width: 60%
+    h2
+      font-size: 34px
+  .registro2
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    input
+      width: 45%
+    h3
+      width: 100%
+      font-size: 24px
+    select
+      width: 30%
+    textarea
+      width: 100%
+    .guardar
+      width: 49% !important

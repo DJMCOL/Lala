@@ -1,0 +1,51 @@
+.portadaBlog
+  margin: 5% 0
+
+.portadaBlog
+  h1
+    font-size: 22px
+    margin-bottom: 15px
+    font-weight: 400
+    color: $titleBlack
+  @media (min-width: 768px)
+    .colflex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      width: 80%
+      h1
+        width: 40%
+        font-size: 30px
+      img
+        width: 50%
+  @media (min-width: 1440px)
+    .colflex
+      h1
+        font-size: 36px
+  @media (min-width: 1600px)
+    .colflex
+      h1
+        font-size: 38px
+
+.contenidoPost
+  padding: 2% 0 5%
+  h4,h5,h6
+    color: $textBlack
+  p, li
+    color: $textBlack
+    font-weight: 400
+  u
+    text-decoration: underline
+  p
+    font-size: 14px
+    @media (min-width: 1280px)
+      font-size: 16px
+    @media (min-width: 1400px)
+      font-size: 18px
+
+@media (min-width: 1280px)
+  .portadaBlog .colflex, .contenidoPost
+    width: 80%
+@media (min-width: 1600px)
+  .portadaBlog .colflex, .contenidoPost
+    width: 70%

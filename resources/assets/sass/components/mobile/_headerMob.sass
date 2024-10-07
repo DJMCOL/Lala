@@ -1,0 +1,67 @@
+.headerMob
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 3
+  width: 100%
+  background: #fff
+  @media (min-width: 1280px)
+    display: none
+
+.contHeaderMob
+  padding: 3% 0
+  align-items: center
+  justify-content: space-between
+  @media (min-width: 768px)
+    padding: 2% 0
+  .logoMob
+    width: 115px
+    //height: 35px
+  .userMob
+    align-items: center
+    a
+      width: 28px  
+      margin-right: 1rem
+  .hamburguer
+    width: 25px
+
+.contMob
+  position: fixed
+  top: 0
+  left: -100%
+  background-color: $mainColor
+  width: 100%
+  height: 100vh
+  padding: 20px
+  z-index: 4
+  transition: .5s
+  @media (min-width: 768px)
+    width: 50%
+.show
+  left: 0
+
+.close
+  width: 100%
+  justify-content: flex-end
+  img
+    width: 25px
+    height: 25px
+
+.contentMob
+  align-items: center
+  padding: 15% 0 0
+  &>img
+    width: 70%
+.enlacesMob
+  justify-content: center
+  margin: 5% 0
+  nav
+    height: 300px
+    grid-template-columns: repeat(2, 1fr)
+    place-items: center start
+    column-gap: 20px
+    a
+      color: #fff
+.linksMob
+  img
+    margin: 0 10px
